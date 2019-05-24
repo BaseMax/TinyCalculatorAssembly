@@ -137,7 +137,7 @@ mov		edx, 100
 int		0x80
 mov		[digitNumber], eax
 mov     rax, number2
-call	str_to_int
+call	str2int
 mov	r10, rax
 ; mov 	al, data1
 ; add 	al, data2
@@ -188,6 +188,6 @@ exit:
 mov		rax, 60
 mov		rdi, 0
 syscall
-str_to_int:
+str2int:
 xor	rax, rax
 mov	rcx,  10
